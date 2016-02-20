@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_height="10dp"
+            android:layout_width="10dp"
+            android:background="@drawable/circle_blue"
+            android:layout_marginRight="5dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/oth_msg">
+            <TextView
+                android:id="@+id/sender_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:alpha="0.5"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:padding="3dp"
+                />
+            <ImageView
+                android:id="@+id/oth_msg_img"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:padding="10dp"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/msg"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:maxEms="10"
+                android:text="ssssfsafa"
+                android:textColor="#ffffff"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="15sp"
+                android:gravity="right"
+                android:layout_gravity="right" />
+        </LinearLayout>
+    </LinearLayout>

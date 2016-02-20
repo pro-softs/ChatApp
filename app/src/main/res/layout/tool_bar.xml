@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:alpha="0.5"
+    android:background="@drawable/tool_bar_bg"
+    >
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="ChatApp"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"/>
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:src="@drawable/ic_user"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/selector"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"/>
+    <ImageView
+        android:id="@+id/attach"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:layout_toLeftOf="@id/profile"
+        android:src="@drawable/clip"
+        android:background="@drawable/selector"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp" />
+
+</RelativeLayout>

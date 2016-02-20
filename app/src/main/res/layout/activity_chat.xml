@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="pro.com.chatapp.ChatActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>
+    <LinearLayout
+        android:id="@+id/send_msgbox"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/msg_box"
+            android:layout_height="50dp"
+            android:layout_width="260dp"
+            android:background="@drawable/self_msg"
+            android:hint="Enter your message"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:alpha="0.8"
+            />
+        <ImageView
+            android:id="@+id/send_btn"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:background="@drawable/selector2"
+            android:src="@drawable/send_ar"
+            android:paddingRight="12dp"
+            android:paddingLeft="17dp"
+            android:paddingTop="1dp"
+            android:layout_marginLeft="20dp"
+            />
+
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/messages_con"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_above="@id/send_msgbox"
+        android:layout_below="@id/tool_bar">
+        <LinearLayout
+            android:id="@+id/messages"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
